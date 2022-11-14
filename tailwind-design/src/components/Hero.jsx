@@ -1,6 +1,6 @@
 function Hero() {
     return (
-    <div className="max-w-[50%] mx-auto">
+    <div className="max-w-[50%] mx-auto bg-white">
         <section>
             <div className="bg-violet-400">
                 <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900">

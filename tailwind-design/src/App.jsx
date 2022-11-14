@@ -3,14 +3,14 @@ import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Feature from './components/Feature'
-import ImageFeature from './ImageFeature'
-import List from './List'
+import ImageFeature from './components/ImageFeature'
+import List from './components/List'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App absolute inset-x-0 top-0">
+    <div className="App absolute inset-x-0 top-0 bg-white">
       <Header/>
       <Hero/>
       <Feature/>
