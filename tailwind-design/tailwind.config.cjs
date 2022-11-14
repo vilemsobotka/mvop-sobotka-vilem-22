@@ -10,6 +10,9 @@ module.exports = {
         'hero-pattern': "url('./src/assets/scattered-forcefields.svg')",
         'test-image': "url('https://source.unsplash.com/random/480x320')"
        },
+      colors: {
+        reactcolor: '#61DBFB'
+      }
     },
   },
   plugins: [],
