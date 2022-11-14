@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App absolute inset-x-0 top-0 bg-white">
+    <div className="App absolute inset-x-0 top-0 bg-hero-pattern">
       <Header/>
       <Hero/>
       <Feature/>
