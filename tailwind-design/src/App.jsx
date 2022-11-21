@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App absolute inset-x-0 top-0 bg-hero-pattern">
-      <Header/>
+      <Header current="home"/>
       <Hero/>
       <Feature/>
       <ImageFeature/>

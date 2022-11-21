@@ -1,3 +1,5 @@
+import HeaderLinks from "./HeaderLinks";
+
 function Header(props) {
     return (<>
         <header className="p-4 bg-gray-200 text-black">
@@ -8,18 +10,7 @@ function Header(props) {
                     </svg>
                 </a>
                 <ul className="items-stretch hidden space-x-3 lg:flex">
-                    <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-reactcolor border-reactcolor">Home</a>
-                    </li>
-                    <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">About</a>
-                    </li>
-                    <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Contacts</a>
-                    </li>
-                    <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Shop</a>
-                    </li>
+                    <HeaderLinks current={props.current}/>
                 </ul>
                 <div className="items-center flex-shrink-0 hidden lg:flex">
                     <button className="self-center px-8 py-3 font-semibold rounded bg-reactcolor text-gray-900">Get Started</button>
