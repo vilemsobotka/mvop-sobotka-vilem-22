@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import axios from "axios";
-import Grid from '../components/Grid';
-
+import Grid from '../components/grid/Grid';
+import GridItem from '../components/grid/GridItem';
+import GridRow from '../components/grid/GridRow';
 function App() {
   const [count, setCount] = useState(0)
   const [post, setPost] = useState(null);
@@ -23,8 +24,9 @@ function App() {
   }
   return (
     <div className="App">
-      {post ? (<Grid roads={post}></Grid>) : <div>loading...</div>}
-      
+      {/*post ? (<Grid roads={post}></Grid>) : <div>loading...</div>*/}
+      <GridItem text="pomazánka"/>
+      <GridRow l_name="Staročeský" s_name="mozog" link="uysafguyag"/>
     </div>
   )
 }
