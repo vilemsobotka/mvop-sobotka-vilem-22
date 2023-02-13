@@ -1,11 +1,14 @@
 import GridItem from "./GridItem"
 function GridRow(props) {
     return (
-        <div className="grid grid-cols-3 gap-4">
-            <GridItem text={props.l_name}/>
-            <GridItem text={props.s_name}/>
-            <GridItem text={props.link}/>
-        </div>
+        <a href={props.link}>
+            <div className={`gap-4 rounded-md text-white`} style={{
+                backgroundColor: `#${props.color}`
+            }}>
+                <GridItem text={props.l_name} />
+                <GridItem text={props.s_name} />
+            </div>
+        </a>
     )
 }
 export default GridRow

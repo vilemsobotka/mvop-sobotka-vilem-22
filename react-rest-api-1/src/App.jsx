@@ -24,9 +24,9 @@ function App() {
   }
   return (
     <div className="App">
-      {/*post ? (<Grid roads={post}></Grid>) : <div>loading...</div>*/}
-      <GridItem text="pomazánka"/>
-      <GridRow l_name="Staročeský" s_name="mozog" link="uysafguyag"/>
+      {post ? (<Grid roads={post}></Grid>) : <div>loading...</div>}
+      {/*<GridItem text="pomazánka"/>
+      <GridRow l_name="Staročeský" s_name="mozog" link="uysafguyag"/>*/}
     </div>
   )
 }
