@@ -10,6 +10,8 @@ import {
 import Root from './routes/Root';
 import ErrorPage from './routes/ErrorPage';
 import About from './routes/About';
+import Info from './routes/Info';
+import Start from './routes/start';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,15 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />
-      }
+      },
+      {
+        path: "info",
+        element: <Info />
+      },
+      {
+        path: "start",
+        element: <Start />
+      },
     ]
   },
 ]);
