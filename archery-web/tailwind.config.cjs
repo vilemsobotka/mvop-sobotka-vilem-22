@@ -9,6 +9,8 @@ module.exports = {
       "target-light-blue": "#8CA2C0",
       'target-red': '#a52422',
       'target-gold': '#fdca40',
+      "white": "#FFFFFF",
+      "black": "#000000",
     },
     extend: {},
   },

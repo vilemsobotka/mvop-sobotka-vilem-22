@@ -12,6 +12,7 @@ import ErrorPage from './routes/ErrorPage';
 import About from './routes/About';
 import Info from './routes/Info';
 import Start from './routes/start';
+import Competitions from './routes/Competitions';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "start",
         element: <Start />
+      },
+      {
+        path: "competitions",
+        element: <Competitions />
       },
     ]
   },
