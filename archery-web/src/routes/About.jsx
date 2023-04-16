@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { ReactSVG } from "react-svg"
 function About() {
     return (
-        <div className="mx-64">
+        <div className="mx-auto place-self-center w-max">
             <div className="flex flex-row gap-16">
                 <div>
                     <h1 className="text-target-blue text-2xl">Sportovní lukostřelba</h1>
