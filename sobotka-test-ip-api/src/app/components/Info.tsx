@@ -1,4 +1,4 @@
-export interface InfoProps{
+export type InfoProps = {
     as: string
     city: string
     country: string
@@ -6,8 +6,8 @@ export interface InfoProps{
     lat: number
     long: number
 }
-export default function Info(props: InfoProps){
-    return(
+export default function Info(props: InfoProps) {
+    return (
         <div className="grid grid-rows-n grid-flow-col">
             <p>as: {props.as}</p>
             <p>city: {props.city}</p>

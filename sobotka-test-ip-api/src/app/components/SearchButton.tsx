@@ -10,9 +10,9 @@ export default function SearchButton(props: ButtonProps) {
         </>
     )
 }
-function HandleClick(){
+async function HandleClick(){
     
-    console.log(getData(""))
+    console.log(await getData(""))
 }
 async function getData(query: string){
     const res = await fetch('http://ip-api.com/json/' + query);
