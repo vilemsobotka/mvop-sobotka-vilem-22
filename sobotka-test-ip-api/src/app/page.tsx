@@ -5,17 +5,10 @@ import type { InfoProps } from "./components/Info"
 import Info from "./components/Info"
 export default function Home() {
   const [address, setAddress] = useState<string>("")
-  const [info, setInfo] = useState({
-    as: "",
-    city: "",
-    country: "",
-    countryCode: "",
-    lat: 0,
-    long: 0
-  })
+  const [info, setInfo] = useState<InfoProps>()
   async function processIPChange(): Promise<void> {
     const result = (await getData(address));
-    //setInfo(result)
+    setInfo(result)
     console.log(result)
   }
 
@@ -28,6 +21,8 @@ export default function Home() {
         size={32} placeholder={"192.168.0.1"}
       />
       <button onClick={processIPChange} className="rounded-r-md text-black bg-lime-400 border-md hover:bg-lime-300 p-1 shadow">locate</button>
+      {info ?<Info {...info}/> : null}
+      
     </>
   )
 }
